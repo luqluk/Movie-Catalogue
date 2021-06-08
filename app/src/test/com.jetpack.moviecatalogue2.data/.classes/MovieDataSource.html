@@ -1,0 +1,62 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: MovieDataSource</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.jetpack.moviecatalogue2.data</a> ]
+</div>
+
+<h1>Coverage Summary for Class: MovieDataSource (com.jetpack.moviecatalogue2.data)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+</tr>
+<tr>
+  <td class="name">MovieDataSource</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.jetpack.moviecatalogue2.data
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import androidx.lifecycle.LiveData
+<i>4</i>&nbsp;import com.jetpack.moviecatalogue2.data.source.remote.response.MovieResponse
+<i>5</i>&nbsp;
+<i>6</i>&nbsp;interface MovieDataSource {
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;    fun getMovies(): LiveData&lt;List&lt;MovieResponse&gt;&gt;
+<i>9</i>&nbsp;
+<i>10</i>&nbsp;    fun getDetailMovie(movieId: Int?): LiveData&lt;MovieResponse&gt;
+<i>11</i>&nbsp;
+<i>12</i>&nbsp;    fun getTvShows(): LiveData&lt;List&lt;MovieResponse&gt;&gt;
+<i>13</i>&nbsp;
+<i>14</i>&nbsp;    fun getDetailTv(tvId: Int?): LiveData&lt;MovieResponse&gt;
+<i>15</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2021-05-07 13:41</div>
+</div>
+</body>
+</html>
